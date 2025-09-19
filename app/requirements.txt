@@ -1,0 +1,26 @@
+# Paquetes principales
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# LangChain y Ollama
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+
+# Procesamiento de documentos
+PyPDF2
+pypdf
+
+# Vectorización y embeddings
+sentence-transformers
+faiss-cpu
+huggingface-hub
+
+# Utilidades
+numpy
+requests
+aiohttp
+typing-extensions
