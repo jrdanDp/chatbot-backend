@@ -6,8 +6,7 @@ El backend utiliza RAG (Retrieval Augmented Generation) para dar respuestas emp�
 ##  Instalación y Ejecución 
 
 ### 1. Clonar el repositorio
-git clone https://github.com/usuario/chatbot-rag.git
-
+git clone https://github.com/jrdanDp/chatbot-backend.git
 ### 2. Como ejecutarlo 
 - Crea un entorno virtual : 
 
