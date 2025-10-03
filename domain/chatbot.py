@@ -1,10 +1,10 @@
-from langchain_ollama.llms import OllamaLLM  # ✅ cambio de import
+from langchain_ollama.llms import OllamaLLM  
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
-from langchain_core.callbacks import CallbackManager  # ✅ necesario para streaming real
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler # ✅ muestra tokens
-from app.rag_loader import retriever
+from langchain_core.callbacks import CallbackManager  
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler 
+from data.rag_loader import retriever
 import uuid
 from typing import Generator
 

@@ -5,7 +5,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 import os
 
 # Carpeta donde se encuentran todos los PDFs
-PDF_DIR = "./docs"
+PDF_DIR = "./data/docs"
 INDEX_DIR = "./faiss_index"
 
 # Recolectar todos los PDFs

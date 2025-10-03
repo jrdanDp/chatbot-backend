@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import StreamingResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from app.chatbot import stream_chatbot
+from domain.chatbot import stream_chatbot
 import uuid
 import json
 from typing import Optional
@@ -26,7 +26,7 @@ class ChatMessage(BaseModel):
 async def chat_stream_endpoint(request: Request, message: ChatMessage):
     try:
         session_id = message.session_id or str(uuid.uuid4())
-        
+
         
         accept_header = request.headers.get("accept", "")
         is_sse = "text/event-stream" in accept_header
